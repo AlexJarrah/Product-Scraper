@@ -3,12 +3,16 @@ package main
 import (
 	"fmt"
 
-	products "github.com/AlexJarrah/Product-Scraper"
+	"github.com/AlexJarrah/Product-Scraper/internal/modules/shopify"
 )
+
+func main() {
+	newburycomics()
+}
 
 func bodega() {
 	link := "https://bdgastore.com/products/palermo-palermo-f-c-39724501"
-	product, err := products.Shopify(link, "")
+	product, err := shopify.Shopify(link, "")
 	if err != nil {
 		panic(err)
 	}
@@ -23,7 +27,7 @@ func bodega() {
 
 func newburycomics() {
 	link := "https://www.newburycomics.com/collections/newbury-comics-merch/products/newbury_comics-newbury_comics_toothface_logo_tie-dye_t-shirt?variant=42267798634676"
-	product, err := products.Shopify(link, "")
+	product, err := shopify.Shopify(link, "")
 	if err != nil {
 		panic(err)
 	}
@@ -38,7 +42,7 @@ func newburycomics() {
 
 func eminem() {
 	link := "https://shop.eminem.com/products/eminem-x-fortnite-radio-vinyl"
-	product, err := products.Shopify(link, "")
+	product, err := shopify.Shopify(link, "")
 	if err != nil {
 		panic(err)
 	}

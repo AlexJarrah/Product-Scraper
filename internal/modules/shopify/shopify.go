@@ -1,4 +1,4 @@
-package products
+package shopify
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/AlexJarrah/Product-Scraper/utils"
+	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
 func Shopify(url, proxy string) (ShopifyProduct, error) {
@@ -19,8 +19,8 @@ func Shopify(url, proxy string) (ShopifyProduct, error) {
 		return ShopifyProduct{}, err
 	}
 
-	apiEndpoint := getAPIEndpoint(url)
-	data, err := getProductJSON(apiEndpoint)
+	apiEndpoint := shopifyGetAPIEndpoint(url)
+	data, err := shopifyGetProductJSON(apiEndpoint)
 	if err != nil {
 		return ShopifyProduct{}, err
 	}
@@ -33,11 +33,11 @@ func Shopify(url, proxy string) (ShopifyProduct, error) {
 	return res, nil
 }
 
-func getAPIEndpoint(url string) string {
+func shopifyGetAPIEndpoint(url string) string {
 	return fmt.Sprintf("%s.json", url)
 }
 
-func getProductJSON(url string) ([]byte, error) {
+func shopifyGetProductJSON(url string) ([]byte, error) {
 	resp, err := http.Get(url)
 	if err != nil {
 		return nil, err
