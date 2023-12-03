@@ -3,46 +3,37 @@ package shopify
 import (
 	"encoding/json"
 	"fmt"
-	"io"
-	"net/http"
 
 	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
+// Retrieves Shopify product data from the provided URL
 func Shopify(url, proxy string) (ShopifyProduct, error) {
+	// Validate the URL
 	if !utils.IsValidURL(url) {
 		return ShopifyProduct{}, fmt.Errorf("invalid url")
 	}
 
+	// Remove query parameters from the URL
 	url, err := utils.RemoveURLParameters(url)
 	if err != nil {
-		return ShopifyProduct{}, err
+		return ShopifyProduct{}, fmt.Errorf("error parsing url: %w", err)
 	}
 
-	apiEndpoint := shopifyGetAPIEndpoint(url)
-	data, err := shopifyGetProductJSON(apiEndpoint)
+	// Get the Shopify API endpoint URL
+	apiEndpoint := getProductAPIEndpoint(url)
+
+	// Retrieve product JSON data
+	data, err := fetchProductJSON(apiEndpoint, proxy)
 	if err != nil {
-		return ShopifyProduct{}, err
+		return ShopifyProduct{}, fmt.Errorf("error getting product data: %w", err)
 	}
 
+	// Parse product JSON data
 	var res ShopifyProduct
-	if err := json.Unmarshal(data, &res); err != nil {
-		return ShopifyProduct{}, err
+	if err := json.Unmarshal([]byte(data), &res); err != nil {
+		return ShopifyProduct{}, fmt.Errorf("error parsing product data: %w", err)
 	}
 
 	return res, nil
-}
-
-func shopifyGetAPIEndpoint(url string) string {
-	return fmt.Sprintf("%s.json", url)
-}
-
-func shopifyGetProductJSON(url string) ([]byte, error) {
-	resp, err := http.Get(url)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-
-	return io.ReadAll(resp.Body)
 }
