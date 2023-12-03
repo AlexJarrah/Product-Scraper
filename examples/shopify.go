@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	products "github.com/quo0001/Product-Scraper"
+	products "github.com/AlexJarrah/Product-Scraper"
 )
 
 func bodega() {

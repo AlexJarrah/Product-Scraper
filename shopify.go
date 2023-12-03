@@ -6,7 +6,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/quo0001/Product-Scraper/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 func Shopify(url, proxy string) (ShopifyProduct, error) {
