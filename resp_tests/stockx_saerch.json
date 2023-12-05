@@ -1,0 +1,558 @@
+{
+    "data": {
+        "browse": {
+            "suggestions": {
+                "isCuratedPage": false,
+                "relatedPages": [],
+                "locales": []
+            },
+            "results": {
+                "edges": [
+                    {
+                        "objectId": "8eec82c0-7cd9-4e9c-a7e8-21c5552e889c",
+                        "node": {
+                            "id": "8eec82c0-7cd9-4e9c-a7e8-21c5552e889c",
+                            "name": "UNC Toe",
+                            "urlKey": "air-jordan-1-high-og-unc-toe",
+                            "title": "Jordan 1 Retro High OG UNC Toe",
+                            "brand": "Jordan",
+                            "description": "The Jordan 1 High OG UNC Toe is taking the sneaker game by storm. Jordan Brand masterfully integrates a unique colorway combo of University Blue, Black, and White on this iconic silhouette.\n<br>\n<br>\nThe Jordan 1 High OG UNC Toe showcases University Blue on the toe box and heel, which perfectly contrasts with the crisp White leather on the mid-panel and Black on the Swoosh and ankle collar. These kicks sit on a clean white midsole, offset by a vibrant University Blue outsole, creating an impressive visual balance.\n<br>\n<br>\nThe Jordan 1 High OG UNC Toe debuted July 22, 2023, commanding a retail price of $180, truly delivering the essence of style and quality.",
+                            "model": "Jordan 1 Retro High OG",
+                            "condition": "New",
+                            "productCategory": "sneakers",
+                            "listingType": "STANDARD",
+                            "gender": "men",
+                            "browseVerticals": [
+                                "sneakers"
+                            ],
+                            "media": {
+                                "thumbUrl": "https://images.stockx.com/images/Air-Jordan-1-High-OG-UNC-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1688675280",
+                                "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-1-High-OG-UNC-Toe-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1688675280"
+                            },
+                            "favorite": null,
+                            "productTraits": [
+                                {
+                                    "name": "Retail Price",
+                                    "value": "180"
+                                },
+                                {
+                                    "name": "Release Date",
+                                    "value": "2023-07-22"
+                                }
+                            ],
+                            "variants": [
+                                {
+                                    "id": "4e7727eb-2b8d-4ca9-807d-7ddefda76ea3",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "3.5"
+                                    }
+                                },
+                                {
+                                    "id": "ddacd252-2883-4b5c-83b6-04299a022d0d",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "4"
+                                    }
+                                },
+                                {
+                                    "id": "c66d7c05-9e81-4482-910f-e58b8bf42bfc",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "4.5"
+                                    }
+                                },
+                                {
+                                    "id": "b5de28d5-a1a9-45c8-8471-4b599897ec86",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "5"
+                                    }
+                                },
+                                {
+                                    "id": "cefdda70-de7b-46be-9975-14f361527966",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "5.5"
+                                    }
+                                },
+                                {
+                                    "id": "54ba0040-df11-4da2-b5db-eca145b79b3e",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "6"
+                                    }
+                                },
+                                {
+                                    "id": "b73d1ace-c2a0-4a4b-b0fa-d97084186cda",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "6.5"
+                                    }
+                                },
+                                {
+                                    "id": "f0fbe4c6-f489-4cb7-80ec-b8d106f48637",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "7"
+                                    }
+                                },
+                                {
+                                    "id": "27151bb2-4d66-4c5e-9149-bd53e5e4af1e",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "7.5"
+                                    }
+                                },
+                                {
+                                    "id": "8dc5e282-6509-43d3-9408-6e3aff6dfd2a",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "8"
+                                    }
+                                },
+                                {
+                                    "id": "dbec2555-a651-4226-acce-1ca48db16831",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "8.5"
+                                    }
+                                },
+                                {
+                                    "id": "f6116311-d2ac-4505-8625-4a544edf3f6b",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "9"
+                                    }
+                                },
+                                {
+                                    "id": "0c5e3e3b-97b4-4415-8540-c4d287426104",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "9.5"
+                                    }
+                                },
+                                {
+                                    "id": "84ebf310-1df2-4a1e-97ba-75ec9b59cea8",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "10"
+                                    }
+                                },
+                                {
+                                    "id": "faca6e8d-32db-4ca1-a1d5-e284d0d999bc",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "10.5"
+                                    }
+                                },
+                                {
+                                    "id": "fa4b0945-7428-4b6a-81bc-2152ae8ad8ae",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "11"
+                                    }
+                                },
+                                {
+                                    "id": "83274e7b-0338-4d37-ae8c-f59298a2a41c",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "11.5"
+                                    }
+                                },
+                                {
+                                    "id": "3510d847-460f-4c91-b0a7-0c138f3f2ac6",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "12"
+                                    }
+                                },
+                                {
+                                    "id": "10dfe68d-cf7e-4eba-ae19-57714f7ee1d4",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "12.5"
+                                    }
+                                },
+                                {
+                                    "id": "bd4fdf72-ef09-4206-a49e-44d15f978a1f",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "13"
+                                    }
+                                },
+                                {
+                                    "id": "c7ac3041-8c18-47d0-b077-ef6359c3104c",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "14"
+                                    }
+                                },
+                                {
+                                    "id": "a7aa3d4d-2b9c-45fe-80a0-ad629726eaf0",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "15"
+                                    }
+                                },
+                                {
+                                    "id": "5585f63e-2fed-4fa0-8faa-af35a2c53d7a",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "16"
+                                    }
+                                },
+                                {
+                                    "id": "08e6b18e-eb88-41fc-bf4d-4420741263c6",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "17"
+                                    }
+                                },
+                                {
+                                    "id": "fcd558c4-1319-4bd4-b438-1f650ceb38f2",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "18"
+                                    }
+                                }
+                            ],
+                            "market": {
+                                "currencyCode": "USD",
+                                "bidAskData": {
+                                    "lowestAsk": 150,
+                                    "highestBid": 195,
+                                    "lastHighestBidTime": "2023-11-13T06:21:25Z",
+                                    "lastLowestAskTime": "2023-10-28T22:01:37Z"
+                                },
+                                "state": {
+                                    "numberOfCustodialAsks": 90
+                                },
+                                "salesInformation": {
+                                    "lastSale": 171,
+                                    "lastSaleDate": "2023-11-13T08:17:52Z",
+                                    "salesThisPeriod": 214,
+                                    "salesLastPeriod": 243,
+                                    "changeValue": -7,
+                                    "changePercentage": -0.043302,
+                                    "volatility": 0.12359,
+                                    "pricePremium": -0.054
+                                },
+                                "deadStock": {
+                                    "sold": 23084,
+                                    "averagePrice": 220
+                                },
+                                "statistics": {
+                                    "last90Days": {
+                                        "averagePrice": 206
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "objectId": "38827ec6-9b31-47bc-943c-3df8c9fdd80a",
+                        "node": {
+                            "id": "38827ec6-9b31-47bc-943c-3df8c9fdd80a",
+                            "name": "True Blue",
+                            "urlKey": "air-jordan-1-retro-high-og-true-blue",
+                            "title": "Jordan 1 Retro High OG True Blue",
+                            "brand": "Jordan",
+                            "description": "The Air Jordan 1 Retro High OG True Blue was a special release that marks the 35th anniversary of the Air Jordan 3 line.\n<br>\n<br>\nThe upper section of this Retro High shoe is constructed of smooth leather. The base is white, the Swoosh is true blue, and the overlays are true blue and cement gray. True blue is also used for the Wings logo on the collar, tongue tag, laces, Nike Air branding on the white insole, and sock liner. Soles with encapsulated AIR units complete the design.\n<br>\n<br>\nThe Air Jordan 1 Retro High OG True Blue debuted on January 14th, 2023 for $180 retail.",
+                            "model": "Jordan 1 Retro High OG",
+                            "condition": "New",
+                            "productCategory": "sneakers",
+                            "listingType": "STANDARD",
+                            "gender": "men",
+                            "browseVerticals": [
+                                "sneakers"
+                            ],
+                            "media": {
+                                "thumbUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-True-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=100&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1674026406",
+                                "smallImageUrl": "https://images.stockx.com/images/Air-Jordan-1-Retro-High-OG-True-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1674026406"
+                            },
+                            "favorite": null,
+                            "productTraits": [
+                                {
+                                    "name": "Retail Price",
+                                    "value": "180"
+                                },
+                                {
+                                    "name": "Release Date",
+                                    "value": "2023-01-14"
+                                }
+                            ],
+                            "variants": [
+                                {
+                                    "id": "0e11300e-6130-4a5e-9322-9ac177a39a9a",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "3.5"
+                                    }
+                                },
+                                {
+                                    "id": "a2d30604-556f-4343-987f-dd9906926537",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "4"
+                                    }
+                                },
+                                {
+                                    "id": "386c16c0-76dc-47a1-9ebc-effb6da6d2ec",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "4.5"
+                                    }
+                                },
+                                {
+                                    "id": "a9d20dfb-16a7-41f1-93c3-e113338114e1",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "5"
+                                    }
+                                },
+                                {
+                                    "id": "b5536581-5ccb-4a52-9f3c-ef40ebed31f7",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "5.5"
+                                    }
+                                },
+                                {
+                                    "id": "c168ccbf-2d04-447c-ad1b-1b2a87fc4031",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "6"
+                                    }
+                                },
+                                {
+                                    "id": "9785733e-6c8a-4d81-b7d6-8710e5ecf6d9",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "6.5"
+                                    }
+                                },
+                                {
+                                    "id": "ddebfa43-79ae-447a-a4a6-3cb2d2919953",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "7"
+                                    }
+                                },
+                                {
+                                    "id": "62f246ac-91a9-4e96-82f0-8cc3f2808786",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "7.5"
+                                    }
+                                },
+                                {
+                                    "id": "26bc01af-ad13-4362-af4d-e150d1009b90",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "8"
+                                    }
+                                },
+                                {
+                                    "id": "e5f23565-38bc-4148-b8ab-ba18a01e7759",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "8.5"
+                                    }
+                                },
+                                {
+                                    "id": "9d59824b-7c74-4dee-ae43-e578e3320be6",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "9"
+                                    }
+                                },
+                                {
+                                    "id": "15b02114-d09b-4b64-b650-4cbca98d0683",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "9.5"
+                                    }
+                                },
+                                {
+                                    "id": "d6782d96-89e1-48f8-8390-7a985867e26f",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "10"
+                                    }
+                                },
+                                {
+                                    "id": "d4354a5c-04fb-444c-9531-48bc8c95b5b0",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "10.5"
+                                    }
+                                },
+                                {
+                                    "id": "caaf247d-db18-4f5f-851f-ab496ff0cdf1",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "11"
+                                    }
+                                },
+                                {
+                                    "id": "e18f56d4-a9e3-4c12-af19-87b2986283ef",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "11.5"
+                                    }
+                                },
+                                {
+                                    "id": "8db98e97-ed7b-4de6-97d9-c7b48f1dcd78",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "12"
+                                    }
+                                },
+                                {
+                                    "id": "558ffc73-0118-40bc-8b41-b701a404303a",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "12.5"
+                                    }
+                                },
+                                {
+                                    "id": "5a1965ac-db9e-4ad5-b46d-1a491074a079",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "13"
+                                    }
+                                },
+                                {
+                                    "id": "6a170de7-3f0b-4122-bc47-76c453622710",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "14"
+                                    }
+                                },
+                                {
+                                    "id": "60ba5fb7-5130-4a96-8dad-45e0e0efe166",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "15"
+                                    }
+                                },
+                                {
+                                    "id": "ba5d05a9-9456-43e5-9019-a0b9bea74d7a",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "16"
+                                    }
+                                },
+                                {
+                                    "id": "91f00a6d-c02f-4698-9d4f-08b9462d4bbd",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "17"
+                                    }
+                                },
+                                {
+                                    "id": "96300791-62ce-4abb-ba36-1b0ed2e013db",
+                                    "hidden": false,
+                                    "favorite": null,
+                                    "traits": {
+                                        "size": "18"
+                                    }
+                                }
+                            ],
+                            "market": {
+                                "currencyCode": "USD",
+                                "bidAskData": {
+                                    "lowestAsk": 140,
+                                    "highestBid": 165,
+                                    "lastHighestBidTime": "2023-10-21T03:44:00Z",
+                                    "lastLowestAskTime": "2023-10-16T20:05:16Z"
+                                },
+                                "state": {
+                                    "numberOfCustodialAsks": 25
+                                },
+                                "salesInformation": {
+                                    "lastSale": 140,
+                                    "lastSaleDate": "2023-11-13T08:45:58Z",
+                                    "salesThisPeriod": 68,
+                                    "salesLastPeriod": 44,
+                                    "changeValue": -60,
+                                    "changePercentage": -0.3,
+                                    "volatility": 0.160489,
+                                    "pricePremium": -0.222
+                                },
+                                "deadStock": {
+                                    "sold": 18162,
+                                    "averagePrice": 176
+                                },
+                                "statistics": {
+                                    "last90Days": {
+                                        "averagePrice": 159
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "pageInfo": {
+                    "limit": 40,
+                    "page": 1,
+                    "pageCount": null,
+                    "queryId": "dc0bb35914454aa694d52f7f185b8c6c",
+                    "queryIndex": "PRODUCTION_PG_FEATURED_DESC",
+                    "total": 2
+                }
+            },
+            "query": "DZ5485-400"
+        }
+    }
+}

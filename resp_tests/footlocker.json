@@ -1,0 +1,538 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": "https://www.footlocker.com/product/~/Z4131600.html",
+    "name": "Jordan Retro 5 SE",
+    "description": "",
+    "image": "https://images.footlocker.com/is/image/EBFL2/Z4131600",
+    "brand": "Jordan",
+    "model": "392038",
+    "sku": "Z4131600",
+    "url": "",
+    "itemCondition": "NewCondition",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": 108
+    },
+    "review": [
+        {
+            "@type": "Review",
+            "author": "Nerick545257019",
+            "datePublished": "2023-10-18",
+            "reviewBody": "I love this shoe and the color especially I wasn’t able to get the 2006 version but I got them now",
+            "name": "Great",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "NekitaM149770280",
+            "datePublished": "2023-10-17",
+            "reviewBody": "A++ on everything TY Nike. Will continue to shop for all the latest and greatest",
+            "name": "Good To Go...",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Fritzdadon23",
+            "datePublished": "2023-10-13",
+            "reviewBody": "The Jordans are very nice. Very comfortable to wear on all occasions. Ankle support and sir bubbles are a major plus.",
+            "name": "Awesome",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "DrakeG193294888",
+            "datePublished": "2023-10-12",
+            "reviewBody": "im in love . true to size . 12 fits me like a glove. color is exactly what I was looking for. material is very quality. couldnt be happier!",
+            "name": "jordan comes through once again.",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "jermainef437568377",
+            "datePublished": "2023-10-06",
+            "reviewBody": "I’m a sneaker connoisseur and this is another weapon in my repertoire!!!",
+            "name": "MAMANEM",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Rello86",
+            "datePublished": "2023-09-27",
+            "reviewBody": "I bought these sneakers recently and I’m excited to be 1 of many who have obtained them ..these are a collector’s item and I would advise anybody who didn’t buy them to try and get a pair if possible.",
+            "name": "Great material for a cool sneaker.",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Sirsmitty06",
+            "datePublished": "2023-09-23",
+            "reviewBody": "So glad that I was able to get these!! My wife saw these and went out and got her a pair!",
+            "name": "🔥🔥🔥",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Olnasty",
+            "datePublished": "2023-09-22",
+            "reviewBody": "This Jordan shoe combines unbeatable comfort with trendy style. Its cushioning is a dream, and the design earns compliments everywhere I go. A perfect fusion of fashion and function!",
+            "name": "True to size",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Jump_TheMan",
+            "datePublished": "2023-09-20",
+            "reviewBody": "I absolutely love these shoes thanks for an opportunity to win and purchase the shoes",
+            "name": "Retro 5",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Futurisitic23",
+            "datePublished": "2023-09-20",
+            "reviewBody": "I bought this pair a few weeks ago and just had to find a shirt to match it perfectly.",
+            "name": "Fresh 2 Death",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Big jmo",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Got them last month.  But why are the prices going up ?",
+            "name": "Wats the deal with price increase?",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 2,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Air23",
+            "datePublished": "2023-09-19",
+            "reviewBody": "One of my favorite shoe designs with the Jordan Retro 5z this unique color way is another great addition to the collection. Footlocker has a very fair system with trying to buy hard to get drops. Thanks Footlocker!!!",
+            "name": "Great addition to show collection",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Retrod4life",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Nice shoes but the original release spoiled me! The color isn’t as rich as the originals!",
+            "name": "Cheated!!!",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 3,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "double_d",
+            "datePublished": "2023-09-19",
+            "reviewBody": "They brought back a classic. They're so sweet I bought two pairs. Love them.",
+            "name": "Beautiful kicks",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Stank",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Footlocker got great customer service And friendly work",
+            "name": "Michael Jordan",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Denimonly",
+            "datePublished": "2023-09-19",
+            "reviewBody": "I bought this shoe as a bit gift for my son. He was so happy as it matched his school colors.",
+            "name": "Styling and profiling",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Smiley605",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Love these and the quality. Love how comfortable these are.",
+            "name": "Great quality",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "White House",
+            "datePublished": "2023-09-19",
+            "reviewBody": "👌🏽🫱🏽‍🫲🏾 I like em 🫡🫡🫡🫡👌🏽👌🏽👌🏽👌🏽👌🏽",
+            "name": "👌🏽🫡",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Big$28",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Color is dope!! Hands down ☝🏾 of dopest releases of the year!!",
+            "name": "Jordan 5’s are 💯",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Phildidit",
+            "datePublished": "2023-09-19",
+            "reviewBody": "Clean and crisp in a classic color way!  A must cop for any Jordan 5 fan",
+            "name": "Buttery suede",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "KarlS",
+            "datePublished": "2023-09-19",
+            "reviewBody": "I love the way the blue on the bottom of the shoe shines through",
+            "name": "They look great",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Cdemps98",
+            "datePublished": "2023-09-18",
+            "reviewBody": "Got these for my friend and he loves them ig thank u",
+            "name": "Great color",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Rednan",
+            "datePublished": "2023-09-18",
+            "reviewBody": "Great shoe from the greatest to ever play the game period!",
+            "name": "Jordan 5’s",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Geez1043",
+            "datePublished": "2023-09-18",
+            "reviewBody": "I couldn’t wait for this pair to come out and I’m glad I added them to my collection!!",
+            "name": "Great sneaker!!!",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "LBoogs324",
+            "datePublished": "2023-09-18",
+            "reviewBody": "I was waiting all year to scoop these and as soon as I got em I'm hand I thru em on",
+            "name": "Straight to feet",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Papi fire",
+            "datePublished": "2023-09-18",
+            "reviewBody": "Shoes are on point!!!! Free shipping and arrived on time. Thanks",
+            "name": "Jordan retro 5",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Zé B",
+            "datePublished": "2023-09-18",
+            "reviewBody": "🔥 🔥 throwback retro, great quality, great sneaker that doesn't disappoint",
+            "name": "Classic",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Pick 1969m",
+            "datePublished": "2023-09-18",
+            "reviewBody": "Glade tht shoes are available glade that walk in store pick up a pair",
+            "name": "Good",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Superdad",
+            "datePublished": "2023-09-18",
+            "reviewBody": "These were a gift for my son. When he opened the box, he was in shock.\r\nHe loves them.",
+            "name": "Jordan Retro 5’s",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        },
+        {
+            "@type": "Review",
+            "author": "Sexye54360",
+            "datePublished": "2023-09-18",
+            "reviewBody": "Great great love color wow wow yyyyyyyyyyyyyes!!!!",
+            "name": "Great",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 5,
+                "ratingValue": 5,
+                "worstRating": 1
+            }
+        }
+    ],
+    "offers": [
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-07.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-07.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-08.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-08.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-09.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-09.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-10.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-10.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-11.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-11.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-12.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-12.5",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-13.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-14.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "InStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-15.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "OutOfStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-16.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "OutOfStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-17.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "OutOfStock"
+        },
+        {
+            "@type": "Offer",
+            "sku": "Z4131600-18.0",
+            "price": 225,
+            "seller": "Foot Locker",
+            "availability": "OutOfStock"
+        }
+    ]
+}

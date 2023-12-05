@@ -1,0 +1,341 @@
+{
+    "results": [
+        {
+            "hits": [
+                {
+                    "categories": [
+                        [
+                            {
+                                "id": "mens-basketball-shoes",
+                                "name": "Basketball"
+                            },
+                            {
+                                "id": "mens-shoes",
+                                "name": "Shoes"
+                            },
+                            {
+                                "id": "men",
+                                "name": "Men's"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "nike-shoes",
+                                "name": "Nike Shoes"
+                            },
+                            {
+                                "id": "nike",
+                                "name": "Nike"
+                            },
+                            {
+                                "id": "brands-index",
+                                "name": "Brands"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "Nike-Dunk",
+                                "name": "Nike Dunk"
+                            },
+                            {
+                                "id": "nike",
+                                "name": "Nike"
+                            },
+                            {
+                                "id": "brands-index",
+                                "name": "Brands"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "mens-classic-shoes",
+                                "name": "Classics"
+                            },
+                            {
+                                "id": "mens-shoes",
+                                "name": "Shoes"
+                            },
+                            {
+                                "id": "men",
+                                "name": "Men's"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "new-arrivals-mens",
+                                "name": "New Arrivals"
+                            },
+                            {
+                                "id": "men",
+                                "name": "Men's"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "new-arrivals",
+                                "name": "New"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "mens-shoes",
+                                "name": "Shoes"
+                            },
+                            {
+                                "id": "men",
+                                "name": "Men's"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "releases",
+                                "name": "Releases"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "nike",
+                                "name": "Nike"
+                            },
+                            {
+                                "id": "brands-index",
+                                "name": "Brands"
+                            }
+                        ],
+                        [
+                            {
+                                "id": "men",
+                                "name": "Men's"
+                            }
+                        ]
+                    ],
+                    "gender": "Men's",
+                    "division": "Shoes",
+                    "size": [
+                        {
+                            "id": "7.5",
+                            "name": "7.5"
+                        },
+                        {
+                            "id": "8",
+                            "name": "8"
+                        },
+                        {
+                            "id": "8.5",
+                            "name": "8.5"
+                        },
+                        {
+                            "id": "9",
+                            "name": "9"
+                        },
+                        {
+                            "id": "9.5",
+                            "name": "9.5"
+                        },
+                        {
+                            "id": "10",
+                            "name": "10"
+                        },
+                        {
+                            "id": "10.5",
+                            "name": "10.5"
+                        },
+                        {
+                            "id": "11",
+                            "name": "11"
+                        },
+                        {
+                            "id": "11.5",
+                            "name": "11.5"
+                        },
+                        {
+                            "id": "12",
+                            "name": "12"
+                        },
+                        {
+                            "id": "13",
+                            "name": "13"
+                        },
+                        {
+                            "id": "14",
+                            "name": "14"
+                        }
+                    ],
+                    "margin": 1,
+                    "objectID": "1000112160",
+                    "priceData": {
+                        "sales": "$140.00"
+                    },
+                    "short_description": null,
+                    "name": "Dunk High Retro SE",
+                    "sizeBucketRefinement": [
+                        {
+                            "id": "14",
+                            "name": "mens-shoes-14"
+                        },
+                        {
+                            "id": "12",
+                            "name": "mens-shoes-12"
+                        },
+                        {
+                            "id": "9.5",
+                            "name": "mens-shoes-9.5"
+                        },
+                        {
+                            "id": "10.5",
+                            "name": "mens-shoes-10.5"
+                        },
+                        {
+                            "id": "11.5",
+                            "name": "mens-shoes-11.5"
+                        },
+                        {
+                            "id": "10",
+                            "name": "mens-shoes-10"
+                        },
+                        {
+                            "id": "8",
+                            "name": "mens-shoes-8"
+                        },
+                        {
+                            "id": "13",
+                            "name": "mens-shoes-13"
+                        },
+                        {
+                            "id": "7.5",
+                            "name": "mens-shoes-7.5"
+                        },
+                        {
+                            "id": "11",
+                            "name": "mens-shoes-11"
+                        },
+                        {
+                            "id": "9",
+                            "name": "mens-shoes-9"
+                        },
+                        {
+                            "id": "8.5",
+                            "name": "mens-shoes-8.5"
+                        }
+                    ],
+                    "gtm": {
+                        "productOutOfStock": false,
+                        "category": "Nike",
+                        "productVariant": "FB8892-200",
+                        "selectVariant": ""
+                    },
+                    "gtmImpressionData": "{\"id\":\"1000112160\",\"name\":\"Dunk High Retro SE\",\"brand\":\"Nike\",\"price\":[],\"productCategory\":\"Nike\",\"productOutOfStock\":false,\"productVariant\":\"FB8892-200\"}",
+                    "long_description": "Debuting in 1985, the Nike Dunk has become one of Nike&#x2019;s most iconic silhouettes over the years. Passing the 35th Anniversary in 2020, Nike has some heat ready for 2023 with essential and unique colorways. From fashion to skateboarding (Nike SB), the Nike Dunk has taken a life of its own and its especially because of its loyal fans. Grab this \"Pine Green\" colorway and add another cultural icon to your sneaker rotation.&nbsp;  <ul><li>Leather upper</li><li>Encapsulated Air-sole unit for plush cushioning</li><li>Rubber outsole for durability on most surfaces</li></ul>",
+                    "productType": "Basketball",
+                    "brand": "Nike",
+                    "sortDate": 1697587200,
+                    "mapPrice": false,
+                    "refinementColor": "Brown",
+                    "__primary_category": {
+                        "0": "Brands",
+                        "1": "Brands > Nike",
+                        "2": "Brands > Nike > Nike Shoes"
+                    },
+                    "vendorStyle": "FB8892-200",
+                    "id": "1000112160",
+                    "variant": false,
+                    "in_stock": true,
+                    "image_groups": [
+                        {
+                            "_type": "image_group",
+                            "images": [
+                                {
+                                    "_type": "image",
+                                    "alt": "Dunk High Retro SE",
+                                    "dis_base_link": "https://www.snipesusa.com/dw/image/v2/BFKF_PRD/on/demandware.static/-/Sites-snipes-master-catalog/default/dwedda6056/images/hi-res/nike_fb8892-200_01.jpg?sw=400&sh=502&strip=false",
+                                    "title": "Dunk High Retro SE"
+                                }
+                            ],
+                            "view_type": "medium"
+                        }
+                    ],
+                    "colorCount": 0,
+                    "master": true,
+                    "primary_category_id": "nike",
+                    "price": {
+                        "USD": 140
+                    },
+                    "_tags": [
+                        "id:1000112160"
+                    ],
+                    "url": "https://www.snipesusa.com/dunk-high-retro-se-nike-baroque-brown---sesame---coconut-milk-fb8892-200-1000112160.html",
+                    "ageGroup": "Adult",
+                    "onlineFlag": true
+                }
+            ],
+            "nbHits": 1,
+            "hitsPerPage": 12,
+            "index": "production_na01_snipes_demandware_net__snipesusa__products__en_US",
+            "page": 0,
+            "nbPages": 1,
+            "processingTimeMS": 1,
+            "processingTimingsMS": {
+                "_request": {
+                    "roundTrip": 1
+                }
+            },
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "facets_stats": {
+                "price.USD": {
+                    "min": 140,
+                    "max": 140,
+                    "avg": 140,
+                    "sum": 140
+                }
+            },
+            "query": "fb8892-200",
+            "queryID": "a3fe181045c522ca478bad6553d5fd6f",
+            "params": "clickAnalytics=true&distinct=true&facets=%5B%22ageGroup%22%2C%22brand%22%2C%22collection%22%2C%22division%22%2C%22features%22%2C%22gender%22%2C%22mapPrice%22%2C%22price.USD%22%2C%22productStyle%22%2C%22productType%22%2C%22refinementColor%22%2C%22sizeBucketRefinement.name%22%5D&filters&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&hitsPerPage=12&maxValuesPerFacet=1000&page=0&query=fb8892-200&tagFilters",
+            "facets": {
+                "brand": {
+                    "Nike": 1
+                },
+                "gender": {
+                    "Men's": 1
+                },
+                "ageGroup": {
+                    "Adult": 1
+                },
+                "division": {
+                    "Shoes": 1
+                },
+                "price.USD": {
+                    "140": 1
+                },
+                "productType": {
+                    "Basketball": 1
+                },
+                "refinementColor": {
+                    "Brown": 1
+                },
+                "sizeBucketRefinement.name": {
+                    "mens-shoes-10": 1,
+                    "mens-shoes-10.5": 1,
+                    "mens-shoes-11": 1,
+                    "mens-shoes-11.5": 1,
+                    "mens-shoes-12": 1,
+                    "mens-shoes-13": 1,
+                    "mens-shoes-14": 1,
+                    "mens-shoes-7.5": 1,
+                    "mens-shoes-8": 1,
+                    "mens-shoes-8.5": 1,
+                    "mens-shoes-9": 1,
+                    "mens-shoes-9.5": 1
+                }
+            },
+            "renderingContent": {},
+            "exhaustive": {
+                "facetsCount": true,
+                "nbHits": true,
+                "typo": true
+            },
+            "exhaustiveFacetsCount": true
+        }
+    ]
+}
