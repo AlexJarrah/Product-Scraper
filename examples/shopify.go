@@ -6,10 +6,6 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/modules/shopify"
 )
 
-func main() {
-	newburycomics()
-}
-
 func bodega() {
 	link := "https://bdgastore.com/products/palermo-palermo-f-c-39724501"
 	product, err := shopify.Shopify(link, "")
