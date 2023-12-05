@@ -1,27 +1,27 @@
 package snipes
 
 import (
-	"errors"
+	"fmt"
 
 	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
 // Returns struct containing product data
-func (r SnipesRequest) GetProductData(proxy string) (SnipesSearchData, error) {
-	if !r.Valid() {
-		return SnipesSearchData{}, errors.New("invalid request")
+func FetchSnipesProducts(query, proxy string) ([]SnipesProduct, error) {
+	if query == "" {
+		return nil, fmt.Errorf("invalid search query")
 	}
 
 	url := getAPIURL()
-	payload := getAPIPayload(r.SKU)
+	payload := getAPIPayload(query)
 	req := utils.NewRequest(url, proxy)
 	req.Method = "POST"
 	req.Body = payload
 
 	resp, err := utils.Request(req)
 	if err != nil {
-		return SnipesSearchData{}, err
+		return nil, err
 	}
 
-	return populateSnipesData([]byte(resp.Body))
+	return unmarshal([]byte(resp.Body))
 }

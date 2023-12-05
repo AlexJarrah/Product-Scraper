@@ -2,30 +2,33 @@ package snipes
 
 import (
 	"encoding/json"
+	"fmt"
+	"net/url"
 	"strings"
 )
 
-// Checks if request is valid
-func (r SnipesRequest) Valid() bool {
-	return r.SKU != ""
-}
-
-// Returns API endpoint for the specified SKU
+// Returns API endpoint for the specified query
 func getAPIURL() string {
 	return apiEndpoint
 }
 
-// Returns API payload for the specified SKU
-func getAPIPayload(sku string) string {
-	return strings.ReplaceAll(apiPayload, "{sku}", sku)
+// Returns API payload for the specified query
+func getAPIPayload(query string) string {
+	q := url.QueryEscape(query)
+	return strings.ReplaceAll(apiPayload, "{query}", q)
 }
 
 // Parse JSON data into struct
-func populateSnipesData(jsonData []byte) (SnipesSearchData, error) {
-	data := SnipesSearchData{}
-	if err := json.Unmarshal(jsonData, &data); err != nil {
-		return SnipesSearchData{}, err
+func unmarshal(data []byte) ([]SnipesProduct, error) {
+	resp := response{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return nil, err
 	}
 
-	return data, nil
+	if len(resp.Results) == 0 {
+		return nil, fmt.Errorf("no results found")
+	}
+
+	products := resp.Results[0].Hits
+	return products, nil
 }
