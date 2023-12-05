@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fmt"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
@@ -55,13 +56,29 @@ func NewRequest(url, proxy string) request.Options {
 
 // Returns JSON data from the HTML script
 func FilterHTML(html string, selector string, attribute ...string) (string, error) {
+	// Create a new reader from the HTML
 	r := strings.NewReader(html)
 
+	// Parse the HTML using goquery
 	doc, err := goquery.NewDocumentFromReader(r)
 	if err != nil {
 		return "", err
 	}
 
+	// Find the specified element
 	s := doc.Find(selector)
-	return s.Text(), nil
+
+	// Return the contents of the element if no attribute is specified
+	if attribute == nil {
+		return s.Text(), nil
+	}
+
+	// Retrieve the value of the specified attribute
+	attr, exists := s.Attr(attribute[0])
+	if !exists {
+		return "", fmt.Errorf("attribute %s not found", attribute[0])
+	}
+
+	// Return the value of the attribute
+	return attr, nil
 }
