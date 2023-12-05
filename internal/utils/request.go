@@ -54,7 +54,8 @@ func NewRequest(url, proxy string) request.Options {
 	}
 }
 
-// Returns JSON data from the HTML script
+// Parses the provided HTML and returns the content of the specified selector
+// or the value of the attribute if specified
 func FilterHTML(html string, selector string, attribute ...string) (string, error) {
 	// Create a new reader from the HTML
 	r := strings.NewReader(html)
