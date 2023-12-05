@@ -3,11 +3,13 @@ package nike
 import (
 	"encoding/json"
 	"fmt"
+	"net/url"
 )
 
 // Returns search URL for the specified SKU
 func getSearchURL(query string) string {
-	return fmt.Sprintf(searchEndpoint, query, query)
+	q := url.QueryEscape(query)
+	return fmt.Sprintf(searchEndpoint, q, q)
 }
 
 func unmarshal(data []byte) ([]NikeProduct, error) {
