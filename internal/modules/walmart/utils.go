@@ -3,59 +3,47 @@ package walmart
 import (
 	"encoding/json"
 	"fmt"
-	"io"
-	"net/http"
 	"strings"
 
+	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 	"github.com/PuerkitoBio/goquery"
+	"github.com/tidwall/gjson"
 )
 
-func requestProduct(sku string) (string, error) {
-	client := &http.Client{}
+func requestProduct(sku, proxy string) (string, error) {
 	url := fmt.Sprintf(productEndpoint, sku)
 
-	req, err := http.NewRequest("GET", url, nil)
+	req := utils.NewRequest(url, proxy)
+	resp, err := utils.Request(req)
 	if err != nil {
 		return "", err
 	}
 
-	req.Header.Add("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36")
-	req.Header.Add("host", "www.walmart.com")
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return "", err
-	}
-	defer resp.Body.Close()
-
-	html, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return "", err
-	}
-
-	return string(html), err
+	return resp.Body, err
 }
 
-func parseHTML(html string) (json []byte, err error) {
+func parseHTML(html string) (string, error) {
 	doc, err := goquery.NewDocumentFromReader(strings.NewReader(html))
 	if err != nil {
-		return nil, err
+		return "", err
 	}
 
 	sel := doc.Find(`[id="__NEXT_DATA__"][type="application/json"]`)
 	value := sel.Text()
 
 	if value == "" {
-		return nil, fmt.Errorf("no data found")
+		return "", fmt.Errorf("no data found")
 	}
 
-	return []byte(value), nil
+	return value, nil
 }
 
-func populateCollections(jsonData []byte) (data WalmartProductData, err error) {
-	data = WalmartProductData{}
+func populateCollections(jsonData string) (WalmartProductData, error) {
+	jsonData = gjson.Get(jsonData, "props.pageProps.initialData.data.product").String()
+	fmt.Println(jsonData)
 
-	if err = json.Unmarshal(jsonData, &data); err != nil {
+	data := WalmartProductData{}
+	if err := json.Unmarshal([]byte(jsonData), &data); err != nil {
 		return WalmartProductData{}, err
 	}
 

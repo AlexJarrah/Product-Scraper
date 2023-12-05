@@ -1,7 +1,7 @@
 package walmart
 
 func GetWalmartProduct(r WalmartProductRequest, proxy string) (WalmartProductData, error) {
-	html, err := requestProduct(r.SKU)
+	html, err := requestProduct(r.SKU, proxy)
 	if err != nil {
 		return WalmartProductData{}, err
 	}
