@@ -6,26 +6,24 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
-// Returns struct containing NikeData data
-func NikeProduct(sku, proxy string) (NikeData, error) {
-	if sku == "" {
-		return NikeData{}, fmt.Errorf("invalid request")
+// Returns product data for all Nike products that match the given search query
+func FetchNikeProducts(query, proxy string) ([]NikeProduct, error) {
+	if query == "" {
+		return nil, fmt.Errorf("invalid search query")
 	}
 
-	url := getSearchURL(sku)
+	url := getSearchURL(query)
 	req := utils.NewRequest(url, proxy)
 
 	resp, err := utils.Request(req)
 	if err != nil {
-		return NikeData{}, err
+		return nil, err
 	}
 
 	json, err := utils.FilterHTML(resp.Body, dataSelector)
 	if err != nil {
-		return NikeData{}, err
+		return nil, err
 	}
 
-	fmt.Println(json)
-
-	return populateNikeData(json)
+	return unmarshal([]byte(json))
 }
