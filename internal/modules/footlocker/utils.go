@@ -5,22 +5,16 @@ import (
 	"fmt"
 )
 
-// Checks if request is valid
-func (r FootlockerRequest) Valid() bool {
-	return r.SKU != ""
-}
-
 // Returns product URL for the specified SKU
-func getSearchURL(sku string) string {
+func getProductURL(sku string) string {
 	return fmt.Sprintf(productEndpoint, sku)
 }
 
-// Parse JSON data into struct
-func populateFootlockerData(body []byte) (FootlockerData, error) {
-	data := FootlockerData{}
-	if err := json.Unmarshal(body, &data); err != nil {
-		return FootlockerData{}, err
+func unmarshal(data []byte) (FootlockerProduct, error) {
+	resp := response{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return FootlockerProduct{}, err
 	}
 
-	return data, nil
+	return FootlockerProduct(resp), nil
 }

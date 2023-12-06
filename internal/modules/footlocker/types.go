@@ -1,10 +1,6 @@
 package footlocker
 
-type FootlockerRequest struct {
-	SKU string `json:"sku"`
-}
-
-type FootlockerData struct {
+type FootlockerProduct struct {
 	Context         string `json:"@context"`
 	Type            string `json:"@type"`
 	ID              string `json:"@id"`
@@ -42,3 +38,5 @@ type FootlockerData struct {
 		Availability string `json:"availability"`
 	} `json:"offers"`
 }
+
+type response FootlockerProduct
