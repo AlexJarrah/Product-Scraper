@@ -7,18 +7,18 @@ import (
 )
 
 // Returns struct containing product data
-func (r AdidasRequest) GetProductsData(proxy string) (AdidasData, error) {
-	if !r.Valid() {
-		return AdidasData{}, fmt.Errorf("invalid request")
+func FetchAdidasProducts(skus []string, proxy string) ([]AdidasProduct, error) {
+	if len(skus) == 0 {
+		return nil, fmt.Errorf("invalid sku list")
 	}
 
-	url := getAPIURL(r.SKUs)
+	url := getAPIEndpoint(skus)
 	req := utils.NewRequest(url, proxy)
 
 	resp, err := utils.Request(req)
 	if err != nil {
-		return AdidasData{}, err
+		return nil, err
 	}
 
-	return populateAdidasData([]byte(resp.Body))
+	return unmarshal([]byte(resp.Body))
 }

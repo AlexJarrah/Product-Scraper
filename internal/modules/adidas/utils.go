@@ -6,28 +6,17 @@ import (
 	"strings"
 )
 
-// Checks if request is valid
-func (r AdidasRequest) Valid() bool {
-	return len(r.SKUs) > 0
-}
-
-// Returns API URL for the specified SKUs
-func getAPIURL(skus []string) string {
-	var list string
-	for _, sku := range skus {
-		list = fmt.Sprintf("%s,%s", list, sku)
-	}
-	list = strings.TrimPrefix(list, ",")
-
-	return fmt.Sprintf(apiEndpoint, list)
+// Returns the API endpoint to return product data for the provided SKUs
+func getAPIEndpoint(skus []string) string {
+	return fmt.Sprintf(apiEndpoint, strings.Join(skus, ","))
 }
 
 // Parse JSON data into struct
-func populateAdidasData(body []byte) (AdidasData, error) {
-	data := AdidasData{}
-	if err := json.Unmarshal(body, &data); err != nil {
-		return AdidasData{}, err
+func unmarshal(data []byte) ([]AdidasProduct, error) {
+	resp := response{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return nil, err
 	}
 
-	return data, nil
+	return resp, nil
 }
