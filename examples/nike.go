@@ -2,6 +2,7 @@ package examples
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/AlexJarrah/Product-Scraper/internal/modules/nike"
 )
@@ -9,7 +10,11 @@ import (
 func nike_() {
 	resp, err := nike.FetchNikeProducts("FN6622_201", "")
 	if err != nil {
-		panic(err)
+		log.Panic(err)
+	}
+
+	if len(resp) == 0 {
+		log.Panic("no products found")
 	}
 
 	fmt.Println(resp[0].Title)
