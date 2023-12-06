@@ -6,7 +6,7 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
-// Returns struct containing product data
+// Returns product data from Adidas for the specified SKUs
 func FetchAdidasProducts(skus []string, proxy string) ([]AdidasProduct, error) {
 	if len(skus) == 0 {
 		return nil, fmt.Errorf("invalid sku list")
