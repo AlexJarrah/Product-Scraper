@@ -15,6 +15,6 @@ func solebox_() {
 
 	for _, product := range resp {
 		fmt.Println(product.Name)
-		fmt.Println(product.Price)
+		fmt.Printf("$%s", product.Price)
 	}
 }
