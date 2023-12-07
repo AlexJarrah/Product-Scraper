@@ -3,24 +3,20 @@ package solebox
 import (
 	"encoding/json"
 	"fmt"
+	"net/url"
 )
 
-// Checks if request is valid
-func (r SoleboxRequest) Valid() bool {
-	return r.SKU != ""
+// Returns search URL for the specified query
+func getSearchURL(query string) string {
+	q := url.QueryEscape(query)
+	return fmt.Sprintf(searchEndpoint, q)
 }
 
-// Returns product URL for the specified SKU
-func getProductURL(sku string) string {
-	return fmt.Sprintf(apiEndpoint, sku)
-}
-
-// Parse JSON data into struct
-func populateSoleboxData(jsonData []byte) (SoleboxData, error) {
-	data := SoleboxData{}
-	if err := json.Unmarshal(jsonData, &data); err != nil {
-		return SoleboxData{}, err
+func unmarshal(data []byte) (SoleboxProduct, error) {
+	resp := SoleboxProduct{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return SoleboxProduct{}, err
 	}
 
-	return data, nil
+	return resp, nil
 }

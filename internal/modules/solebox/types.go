@@ -1,10 +1,6 @@
 package solebox
 
-type SoleboxRequest struct {
-	SKU string `json:"sku"`
-}
-
-type SoleboxData struct {
+type SoleboxProduct struct {
 	Name         string `json:"name"`
 	ID           string `json:"id"`
 	Price        string `json:"price"`
