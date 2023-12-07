@@ -2,62 +2,33 @@ package supreme
 
 import (
 	"encoding/json"
-	"io"
-	"net/http"
-	"reflect"
-	"strings"
-
-	"github.com/PuerkitoBio/goquery"
+	"fmt"
 )
 
-func requestCollection() (string, error) {
-	resp, err := http.Get(collectionsEndpoint)
-	if err != nil {
-		return "", err
-	}
-	defer resp.Body.Close()
-
-	html, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return "", err
-	}
-
-	return string(html), err
+// Returns API endpoint to return all product datea for the season
+func getSeasonAPIEndpoint(season string) string {
+	return fmt.Sprintf(seasonAPIEndpoint, season)
 }
 
-func parseHTML(html string) (json []byte, err error) {
-	doc, err := goquery.NewDocumentFromReader(strings.NewReader(html))
-	if err != nil {
-		return nil, err
-	}
-
-	sel := doc.Find("[class=js-first-all-products-json]")
-	value := sel.Text()
-
-	if value == "" {
-		return nil, err
-	}
-
-	return []byte(value), nil
+// Returns endpoint to return all current shop data
+func getAllCollectionsEndpoint() string {
+	return collectionsEndpoint
 }
 
-func populateCollections(jsonData []byte) (data SupremeCollectionData, err error) {
-	data = SupremeCollectionData{}
-
-	if err = json.Unmarshal(jsonData, &data); err != nil {
-		return SupremeCollectionData{}, err
+func unmarshalCollections(data []byte) (SupremeCollections, error) {
+	resp := responseCollections{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return SupremeCollections{}, err
 	}
 
-	return data, nil
+	return SupremeCollections(resp), nil
 }
 
-// PopulateStruct takes a struct type and JSON data, and populates an instance of the struct.
-func PopulateStruct(structType reflect.Type, jsonData []byte) (interface{}, error) {
-	instance := reflect.New(structType).Interface()
-
-	if err := json.Unmarshal(jsonData, instance); err != nil {
-		return nil, err
+func unmarshalSeason(data []byte) (SupremeSeason, error) {
+	resp := responseSeason{}
+	if err := json.Unmarshal(data, &resp); err != nil {
+		return SupremeSeason{}, err
 	}
 
-	return instance, nil
+	return resp.Result.Data, nil
 }

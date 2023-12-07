@@ -1,20 +1,40 @@
 package supreme
 
-func GetSupremeProduct(proxy string) (SupremeCollectionData, error) {
-	html, err := requestCollection()
+import (
+	"fmt"
+
+	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+)
+
+// Returns product data for all products in the Supreme collection
+func FetchSupremeCollections(proxy string) (SupremeCollections, error) {
+	url := getAllCollectionsEndpoint()
+	req := utils.NewRequest(url, proxy)
+
+	resp, err := utils.Request(req)
 	if err != nil {
-		return SupremeCollectionData{}, err
+		return SupremeCollections{}, err
 	}
 
-	json, err := parseHTML(html)
+	json, err := utils.FilterHTML(resp.Body, collectionsJSONSelector)
 	if err != nil {
-		return SupremeCollectionData{}, err
+		return SupremeCollections{}, err
 	}
 
-	data, err := populateCollections(json)
+	return unmarshalCollections([]byte(json))
+}
+
+// Returns product data for every product in the Supreme season lookbook & preview
+func FetchSupremeSeason(season, proxy string) (SupremeSeason, error) {
+	url := getSeasonAPIEndpoint(season)
+	req := utils.NewRequest(url, proxy)
+
+	fmt.Println(url)
+
+	resp, err := utils.Request(req)
 	if err != nil {
-		return SupremeCollectionData{}, err
+		return SupremeSeason{}, err
 	}
 
-	return data, nil
+	return unmarshalSeason([]byte(resp.Body))
 }
