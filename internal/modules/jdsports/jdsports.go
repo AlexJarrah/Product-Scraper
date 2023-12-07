@@ -6,19 +6,19 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/utils"
 )
 
-// Returns struct containing product data
-func (r JDSportsRequest) GetProductData(proxy string) (JDSportsData, error) {
-	if !r.Valid() {
-		return JDSportsData{}, fmt.Errorf("invalid request")
+// Returns product data for the JD Sports product matching the given SKU
+func FetchJDSportsProduct(sku, proxy string) (JDSportsProduct, error) {
+	if sku == "" {
+		return JDSportsProduct{}, fmt.Errorf("invalid sku")
 	}
 
-	url := getProductURL(r.SKU)
+	url := getProductAPIEndpoint(sku)
 	req := utils.NewRequest(url, proxy)
 
 	resp, err := utils.Request(req)
 	if err != nil {
-		return JDSportsData{}, err
+		return JDSportsProduct{}, err
 	}
 
-	return populateJDSportsData([]byte(resp.Body))
+	return unmarshal([]byte(resp.Body))
 }
