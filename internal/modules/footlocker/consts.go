@@ -1,6 +1,3 @@
 package footlocker
 
-const (
-	productEndpoint = "https://www.footlocker.com/product/~/%s.html"
-	dataSelector    = "script#productLdJson"
-)
+const productEndpoint = "https://www.footlocker.com/zgw/product-core/v1/pdp/sku/%s"

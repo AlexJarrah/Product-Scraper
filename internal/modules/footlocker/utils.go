@@ -5,8 +5,8 @@ import (
 	"fmt"
 )
 
-// Returns product URL for the specified SKU
-func getProductURL(sku string) string {
+// Returns the API endpoint to provide product data on the specified SKU
+func getAPIEndpoint(sku string) string {
 	return fmt.Sprintf(productEndpoint, sku)
 }
 

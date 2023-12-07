@@ -7,12 +7,12 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/modules/footlocker"
 )
 
-func footlocker_() {
-	resp, err := footlocker.FetchFootlockerProduct("J4210001", "")
+func Footlocker_() {
+	resp, err := footlocker.FetchFootlockerProduct("W2288111", "")
 	if err != nil {
 		log.Panic(err)
 	}
 
-	fmt.Println(resp.Name)
-	fmt.Println(resp.Offers[0].Price)
+	fmt.Println(resp.Model.Name)
+	fmt.Println(resp.Style.Price.CurrencyIso)
 }
