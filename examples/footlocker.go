@@ -7,7 +7,7 @@ import (
 	"github.com/AlexJarrah/Product-Scraper/internal/modules/footlocker"
 )
 
-func Footlocker_() {
+func footlocker_() {
 	resp, err := footlocker.FetchFootlockerProduct("W2288111", "")
 	if err != nil {
 		log.Panic(err)
