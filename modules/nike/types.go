@@ -12,12 +12,12 @@ type NikeProduct struct {
 		} `json:"images"`
 		PdpURL string `json:"pdpUrl"`
 		Price  struct {
-			Currency               string `json:"currency"`
-			CurrentPrice           int    `json:"currentPrice"`
-			Discounted             bool   `json:"discounted"`
-			EmployeePrice          int    `json:"employeePrice"`
-			FullPrice              int    `json:"fullPrice"`
-			MinimumAdvertisedPrice any    `json:"minimumAdvertisedPrice"`
+			Currency               string  `json:"currency"`
+			CurrentPrice           float32 `json:"currentPrice"`
+			Discounted             bool    `json:"discounted"`
+			EmployeePrice          float32 `json:"employeePrice"`
+			FullPrice              float32 `json:"fullPrice"`
+			MinimumAdvertisedPrice any     `json:"minimumAdvertisedPrice"`
 		} `json:"price"`
 		CloudProductID    string `json:"cloudProductId"`
 		InStock           bool   `json:"inStock"`
@@ -57,12 +57,12 @@ type NikeProduct struct {
 	Pid               string `json:"pid"`
 	PrebuildID        any    `json:"prebuildId"`
 	Price             struct {
-		Currency               string `json:"currency"`
-		CurrentPrice           int    `json:"currentPrice"`
-		Discounted             bool   `json:"discounted"`
-		EmployeePrice          int    `json:"employeePrice"`
-		FullPrice              int    `json:"fullPrice"`
-		MinimumAdvertisedPrice any    `json:"minimumAdvertisedPrice"`
+		Currency               string  `json:"currency"`
+		CurrentPrice           float32 `json:"currentPrice"`
+		Discounted             bool    `json:"discounted"`
+		EmployeePrice          float32 `json:"employeePrice"`
+		FullPrice              float32 `json:"fullPrice"`
+		MinimumAdvertisedPrice any     `json:"minimumAdvertisedPrice"`
 	} `json:"price"`
 	ProductInstanceID any      `json:"productInstanceId"`
 	ProductType       string   `json:"productType"`
