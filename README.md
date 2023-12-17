@@ -11,6 +11,7 @@ This package allows you to retrieve data on products across various retailers wi
 - [Shopify](https://www.shopify.com/)
 - [Snipes](https://www.snipesusa.com/)
 - [Solebox](https://solebox.com/)
+- [StockX](https://stockx.com/)
 - [Supreme](https://us.supreme.com/)
 - [Walmart](https://www.walmart.com/)
 - & more to come...
