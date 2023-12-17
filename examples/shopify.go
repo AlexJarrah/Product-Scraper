@@ -3,7 +3,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/shopify"
+	"github.com/AlexJarrah/Product-Scraper/modules/shopify"
 )
 
 func bodega() {

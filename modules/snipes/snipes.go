@@ -3,7 +3,7 @@ package snipes
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Returns struct containing product data

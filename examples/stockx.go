@@ -3,7 +3,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/stockx"
+	"github.com/AlexJarrah/Product-Scraper/modules/stockx"
 )
 
 func stockx_() {

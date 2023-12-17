@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/adidas"
+	"github.com/AlexJarrah/Product-Scraper/modules/adidas"
 )
 
 func adidas_() {

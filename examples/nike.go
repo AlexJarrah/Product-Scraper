@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/nike"
+	"github.com/AlexJarrah/Product-Scraper/modules/nike"
 )
 
 func nike_() {

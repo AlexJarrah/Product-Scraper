@@ -3,7 +3,7 @@ package stockx
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Returns product market data for all StockX products matching the given search query

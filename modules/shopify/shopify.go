@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Retrieves Shopify product data from the provided URL

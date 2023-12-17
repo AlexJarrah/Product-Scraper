@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Formats the provided product URL as the product JSON API endpoint

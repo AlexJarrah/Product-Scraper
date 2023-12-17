@@ -3,7 +3,7 @@ package footlocker
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Returns product data for the specified product SKU

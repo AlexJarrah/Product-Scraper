@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/solebox"
+	"github.com/AlexJarrah/Product-Scraper/modules/solebox"
 )
 
 func solebox_() {

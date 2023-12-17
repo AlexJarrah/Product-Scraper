@@ -3,7 +3,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/snipes"
+	"github.com/AlexJarrah/Product-Scraper/modules/snipes"
 )
 
 func snipes_() {

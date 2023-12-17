@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/supreme"
+	"github.com/AlexJarrah/Product-Scraper/modules/supreme"
 )
 
 func supremeCollections() {

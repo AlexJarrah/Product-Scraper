@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/footlocker"
+	"github.com/AlexJarrah/Product-Scraper/modules/footlocker"
 )
 
 func footlocker_() {

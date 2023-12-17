@@ -3,7 +3,7 @@ package adidas
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Returns product data from Adidas for the specified SKUs

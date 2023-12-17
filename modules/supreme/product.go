@@ -3,7 +3,7 @@ package supreme
 import (
 	"fmt"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/utils"
+	"github.com/AlexJarrah/Product-Scraper/utils"
 )
 
 // Returns product data for all products in the Supreme collection

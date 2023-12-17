@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/AlexJarrah/Product-Scraper/internal/modules/jdsports"
+	"github.com/AlexJarrah/Product-Scraper/modules/jdsports"
 )
 
 func jdsports_() {
