@@ -2,7 +2,7 @@
 
 This package allows you to retrieve data on products across various retailers with built-in anti-bot evasion and proxy support.
 
-## Support sites
+## Supported sites
 
 - [Adidas](https://www.adidas.com/)
 - [Goat](https://www.goat.com/)
