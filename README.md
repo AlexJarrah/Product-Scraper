@@ -5,6 +5,7 @@ This package allows you to retrieve data on products across various retailers wi
 ## Support sites
 
 - [Adidas](https://www.adidas.com/)
+- [Goat](https://www.goat.com/)
 - [Footlocker](https://www.footlocker.com/)
 - [JD Sports](https://www.jdsports.com/)
 - [Nike](https://www.nike.com/)
