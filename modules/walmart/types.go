@@ -29,7 +29,7 @@ type WalmartProductData struct {
 	LegalRestriction       bool    `json:"legalRestriction"`
 	ShippingRestriction    bool    `json:"shippingRestriction"`
 	AvailabilityStatus     string  `json:"availabilityStatus"`
-	AverageRating          float64 `json:"averageRating"`
+	AverageRating          float32 `json:"averageRating"`
 	AssociatedBundleID     any     `json:"associatedBundleId"`
 	SuppressReviews        bool    `json:"suppressReviews"`
 	Brand                  string  `json:"brand"`
@@ -87,7 +87,7 @@ type WalmartProductData struct {
 	CanonicalURL        string  `json:"canonicalUrl"`
 	CatalogSellerID     int     `json:"catalogSellerId"`
 	SellerReviewCount   int     `json:"sellerReviewCount"`
-	SellerAverageRating float64 `json:"sellerAverageRating"`
+	SellerAverageRating float32 `json:"sellerAverageRating"`
 	Category            struct {
 		CategoryPathID string `json:"categoryPathId"`
 		Path           []struct {
@@ -188,7 +188,7 @@ type WalmartProductData struct {
 			SubmapType                   any `json:"submapType"`
 		} `json:"priceDisplayCodes"`
 		CurrentPrice struct {
-			Price              float64 `json:"price"`
+			Price              float32 `json:"price"`
 			PriceString        string  `json:"priceString"`
 			VariantPriceString string  `json:"variantPriceString"`
 			CurrencyUnit       string  `json:"currencyUnit"`
@@ -236,7 +236,7 @@ type WalmartProductData struct {
 		CurrentPrice struct {
 			PriceType   any     `json:"priceType"`
 			PriceString string  `json:"priceString"`
-			Price       float64 `json:"price"`
+			Price       float32 `json:"price"`
 		} `json:"currentPrice"`
 	} `json:"secondaryOfferPrice"`
 	SemStoreData   any `json:"semStoreData"`
