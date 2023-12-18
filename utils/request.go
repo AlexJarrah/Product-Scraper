@@ -2,6 +2,7 @@ package utils
 
 import (
 	"fmt"
+	"math/rand"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
@@ -23,7 +24,7 @@ func NewRequest(url, proxy string) request.Options {
 			"sec-ch-ua":                 `Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36`,
 			"sec-ch-ua-mobile":          "?0",
 			"upgrade-insecure-requests": "1",
-			"user-agent":                "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+			"user-agent":                getRandomUserAgent(),
 			"accept":                    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 			"sec-fetch-site":            "none",
 			"sec-fetch-mode":            "navigate",
@@ -52,6 +53,11 @@ func NewRequest(url, proxy string) request.Options {
 			Proxy:           proxy,
 		},
 	}
+}
+
+// Returns a random user-agent
+func getRandomUserAgent() string {
+	return useragents[rand.Intn(len(useragents))]
 }
 
 // Parses the provided HTML and returns the content of the specified selector
