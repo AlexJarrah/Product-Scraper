@@ -17,20 +17,24 @@ func FetchStockXProducts(query, proxy string) ([]StockXProduct, error) {
 		return nil, err
 	}
 
-	req := utils.NewRequest(apiEndpoint, proxy)
-	req.Method = "POST"
-	req.Body = getRequestBody(query)
-	req.Headers["apollographql-client-name"] = "Iron"
-	req.Headers["apollographql-client-version"] = clientVersion
-	req.Headers["app-platform"] = "Iron"
-	req.Headers["app-version"] = clientVersion
-	req.Headers["accept-language"] = "en-US"
-	req.Headers["x-stockx-device-id"] = deviceID
+	session, err := utils.NewSession(apiEndpoint, proxy)
+	if err != nil {
+		return nil, err
+	}
+	defer session.Close()
 
-	resp, err := utils.Request(req)
+	session.OrderedHeaders.Set("apollographql-client-name", "Iron")
+	session.OrderedHeaders.Set("apollographql-client-version", clientVersion)
+	session.OrderedHeaders.Set("app-platform", "Iron")
+	session.OrderedHeaders.Set("app-version", clientVersion)
+	session.OrderedHeaders.Set("accept-language", "en-US")
+	session.OrderedHeaders.Set("x-stockx-device-id", deviceID)
+
+	body := getRequestBody(query)
+	resp, err := session.Post(apiEndpoint, body)
 	if err != nil {
 		return nil, err
 	}
 
-	return unmarshal([]byte(resp.Body))
+	return unmarshal(resp.Body)
 }

@@ -3,7 +3,6 @@ package stockx
 import (
 	"encoding/json"
 	"fmt"
-	"net/url"
 
 	"github.com/AlexJarrah/Product-Scraper/utils"
 )
@@ -19,27 +18,26 @@ func getDeviceID(proxy string) error {
 	}
 
 	u := homepage
-	req := utils.NewRequest(u, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(u, proxy)
+	if err != nil {
+		return err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(u)
 	if err != nil {
 		return err
 	}
 
-	url, err := url.Parse(u)
-	if err != nil {
-		return err
-	}
-
-	cookies := resp.Request.Jar.Cookies(url)
-	for _, cookie := range cookies {
+	for _, cookie := range resp.HttpResponse.Cookies() {
 		if cookie.Name == "stockx_device_id" {
 			deviceID = cookie.Value
 			return nil
 		}
 	}
 
-	return fmt.Errorf("stockx_device_id not found")
+	return fmt.Errorf("cookie stockx_device_id not found")
 }
 
 func unmarshal(data []byte) ([]StockXProduct, error) {

@@ -1,8 +1,8 @@
 package solebox
 
 import (
+	"bytes"
 	"fmt"
-	"strings"
 
 	"github.com/AlexJarrah/Product-Scraper/utils"
 	"github.com/PuerkitoBio/goquery"
@@ -15,14 +15,19 @@ func FetchSoleboxProducts(query, proxy string) ([]SoleboxProduct, error) {
 	}
 
 	url := getSearchURL(query)
-	req := utils.NewRequest(url, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return nil, err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
 	if err != nil {
 		return nil, err
 	}
 
-	doc, err := goquery.NewDocumentFromReader(strings.NewReader(resp.Body))
+	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(resp.Body))
 	if err != nil {
 		return nil, err
 	}

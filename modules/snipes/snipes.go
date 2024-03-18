@@ -14,11 +14,14 @@ func FetchSnipesProducts(query, proxy string) ([]SnipesProduct, error) {
 
 	url := getAPIURL()
 	payload := getAPIPayload(query)
-	req := utils.NewRequest(url, proxy)
-	req.Method = "POST"
-	req.Body = payload
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return nil, err
+	}
+	defer session.Close()
+
+	resp, err := session.Post(url, payload)
 	if err != nil {
 		return nil, err
 	}

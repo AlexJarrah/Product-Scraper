@@ -15,14 +15,17 @@ func FetchFootlockerProduct(sku, proxy string) (FootlockerProduct, error) {
 	}
 
 	url := getAPIEndpoint(sku)
-	req := utils.NewRequest(url, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
 	if err != nil {
 		return FootlockerProduct{}, err
 	}
+	defer session.Close()
 
-	fmt.Println(resp.Body)
+	resp, err := session.Get(url)
+	if err != nil {
+		return FootlockerProduct{}, err
+	}
 
 	return unmarshal([]byte(resp.Body))
 }

@@ -14,16 +14,20 @@ func getProductAPIEndpoint(url string) string {
 
 // Retrieves the JSON data of the given URL using the provided proxy
 func fetchProductJSON(url, proxy string) (string, error) {
-	request := utils.NewRequest(url, proxy)
-
-	response, err := utils.Request(request)
+	session, err := utils.NewSession(url, proxy)
 	if err != nil {
-		return "", fmt.Errorf("error making HTTP request: %w", err)
+		return "", err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
+	if err != nil {
+		return "", err
 	}
 
-	if response.StatusCode != http.StatusOK {
-		return "", fmt.Errorf("HTTP request failed with status code: %d", response.StatusCode)
+	if resp.StatusCode != http.StatusOK {
+		return "", fmt.Errorf("HTTP request failed with status code: %d", resp.StatusCode)
 	}
 
-	return response.Body, nil
+	return string(resp.Body), nil
 }

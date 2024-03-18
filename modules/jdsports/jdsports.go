@@ -13,9 +13,14 @@ func FetchJDSportsProduct(sku, proxy string) (JDSportsProduct, error) {
 	}
 
 	url := getProductAPIEndpoint(sku)
-	req := utils.NewRequest(url, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return JDSportsProduct{}, err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
 	if err != nil {
 		return JDSportsProduct{}, err
 	}

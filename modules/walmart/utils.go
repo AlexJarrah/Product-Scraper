@@ -13,13 +13,18 @@ import (
 func requestProduct(sku, proxy string) (string, error) {
 	url := fmt.Sprintf(productEndpoint, sku)
 
-	req := utils.NewRequest(url, proxy)
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return "", err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
 	if err != nil {
 		return "", err
 	}
 
-	return resp.Body, err
+	return string(resp.Body), err
 }
 
 func parseHTML(html string) (string, error) {

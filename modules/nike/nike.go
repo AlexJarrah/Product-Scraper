@@ -13,14 +13,19 @@ func FetchNikeProducts(query, proxy string) ([]NikeProduct, error) {
 	}
 
 	url := getSearchURL(query)
-	req := utils.NewRequest(url, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return nil, err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
 	if err != nil {
 		return nil, err
 	}
 
-	json, err := utils.FilterHTML(resp.Body, dataSelector)
+	json, err := utils.FilterHTML(string(resp.Body), dataSelector)
 	if err != nil {
 		return nil, err
 	}

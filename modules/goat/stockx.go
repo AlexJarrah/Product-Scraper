@@ -13,9 +13,14 @@ func FetchGoatProducts(query, proxy string) ([]GoatProduct, error) {
 	}
 
 	url := getSearchURL(query)
-	req := utils.NewRequest(url, proxy)
 
-	resp, err := utils.Request(req)
+	session, err := utils.NewSession(url, proxy)
+	if err != nil {
+		return nil, err
+	}
+	defer session.Close()
+
+	resp, err := session.Get(url)
 	if err != nil {
 		return nil, err
 	}
