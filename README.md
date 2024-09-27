@@ -21,7 +21,7 @@ This package allows you to retrieve data on products across various retailers wi
 To use this package, [install Go](https://go.dev/) and run:
 
 ```
-go get -u https://github.com/AlexJarrah/Product-Scraper
+go get -u github.com/AlexJarrah/Product-Scraper
 ```
 
 ## Usage
